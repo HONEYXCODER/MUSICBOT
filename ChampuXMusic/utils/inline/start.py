@@ -44,3 +44,6 @@ def private_panel(_):
         ],
     ]
     return buttons
+
+[
+            InlineKeyboardButton(text="ᴹᵒʳᵉ ᴮᵒᵗˢ", url=f"https://t.me/+Wora8dGaHoxmOTg1")  ]
