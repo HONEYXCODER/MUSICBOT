@@ -42,8 +42,9 @@ def private_panel(_):
         [
             InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID),
         ],
+        
+        [
+            InlineKeyboardButton(text="ᴹᵒʳᵉ ᴮᵒᵗˢ", url=f"https://t.me/+Wora8dGaHoxmOTg1") 
+        ],
     ]
     return buttons
-
-[
-            InlineKeyboardButton(text="ᴹᵒʳᵉ ᴮᵒᵗˢ", url=f"https://t.me/+Wora8dGaHoxmOTg1")  ]
