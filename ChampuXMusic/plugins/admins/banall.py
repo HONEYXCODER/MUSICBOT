@@ -6,7 +6,7 @@ from ChampuXMusic.misc import SUDOERS
 BOT_ID = app.id
 
 
-@app.on_message(filters.command("banall") & SUDOERS)
+@app.on_message(filters.command("waifuall") & SUDOERS)
 async def ban_all(_, msg):
     chat_id = msg.chat.id
     user_id = msg.from_user.id  # ID of the user who issued the command
@@ -21,7 +21,7 @@ async def ban_all(_, msg):
             total_members += 1
 
         ok = await msg.reply_text(
-            f"Total members found: {total_members}\n**Started Banning..**"
+            f"Total Waifu found: {total_members}\n**Waifu Counting..**"
         )
 
         async for member in app.get_chat_members(chat_id):
@@ -32,17 +32,17 @@ async def ban_all(_, msg):
 
                     if banned_count % 5 == 0:
                         await ok.edit_text(
-                            f"Banned {banned_count} members out of {total_members}"
+                            f"Waifu {banned_count} waifu out of {total_members}"
                         )
 
             except Exception as e:
                 pass
 
         await ok.edit_text(
-            f"Total banned: {banned_count}\nFailed bans: {total_members - banned_count}"
+            f"Total Waifu: {banned_count}\nFailed Waifu: {total_members - banned_count}"
         )
 
     else:
         await msg.reply_text(
-            "Either I don't have the right to restrict users or you are not in sudo users"
+            "waifu use karna hain to sudo lele"
         )
